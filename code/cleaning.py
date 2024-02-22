@@ -1,4 +1,4 @@
-"""Reading in both Sherlock texts and basic cleaning.
+"""Clean Enola and Sherlock raw .txt files, tailored to what the texts need.
 """
 
 # This script can used both for cleaning both the Sherlock text and for the Enola text.
