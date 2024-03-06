@@ -1,7 +1,7 @@
 """Clean Enola and Sherlock raw .txt files, tailored to what the texts need.
 """
 
-# This script can used both for cleaning both the Sherlock text and for the Enola text.
+# This script can used both for cleaning both Sherlock and Enola texts.
 # Use the clean_Sherlock() or clean_Enola() functions respectively and adapt the filepaths. 
 
 
@@ -59,14 +59,14 @@ filename = "Sherlock_original.txt"
 folder_name = "Textdaten"
 filepath = os.path.join(parent_dir, folder_name, filename)
 
-with open(filepath, 'r', encoding='utf-8') as file:
+with open(filepath, 'r', encoding='utf-8') as file: # Check that the encoding has the right parameter if you modify this script.
     file_content = file.read()
 
 
 
 cleaned_sherlock = clean_Sherlock(file_content)
 
-# Writing to output file.  
+# Write  to output file.  
 if __name__ == "__main__":
     
     final_cleaned_file = clean_Sherlock(file_content)  
