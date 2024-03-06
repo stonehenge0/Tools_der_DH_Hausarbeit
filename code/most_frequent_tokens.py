@@ -20,7 +20,8 @@ def get_top_tokens(doc, num_tokens=20):
     if not isinstance(doc, spacy.tokens.Doc):
         raise ValueError("Input must be a spacy Doc object.")
 
-    token_counts = Counter([token.text for token in doc if not (token.is_stop or token.is_punct)])
+    # We don't want to count punctuation or stopwords
+    token_counts = Counter([token.text for token in doc if not (token.is_stop or token.is_punct)]) 
     
     top_tokens = dict(token_counts.most_common(num_tokens))
 
@@ -47,9 +48,8 @@ if __name__ == "__main__":
     e_doc = nlp(e)
     s_doc = nlp(s)
 
-    # Get the top 20 tokens and their frequencies
-    top_tokens_e = get_top_tokens(e_doc, num_tokens=20)
-    top_tokens_s = get_top_tokens(s_doc, num_tokens=20)
+    top_tokens_e = get_top_tokens(e_doc, num_tokens=30)
+    top_tokens_s = get_top_tokens(s_doc, num_tokens=30)
     
         
         
