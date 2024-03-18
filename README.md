@@ -10,6 +10,11 @@ Dieses Repository beinhaltet verschiedene Messungen mithilfe von dem Python Modu
 ----
 ## Funktionalitäten
 
+Ein paar der wichtigsten Funktionen dieses Repos sind:
+
+- 
+
+
 
 
 
@@ -39,7 +44,7 @@ pip install -r requirements.txt
 ## Modul-Details
 
 - Semester: Wintersemester 2023/24
-- Modulnummer:
+- Modulnummer:  B.DH.05.PrVor: Werkzeuge der Digital Humanities (Übung)
 - Prüferin: Hanna Surjadi
 
 ---
@@ -67,6 +72,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 > See [LICENSE](LICENSE.txt).
+
+
+<br>
+<a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=cyan&size=25&center=true&vCenter=true&width=900&height=100&lines=That's+all+folks!"></a>
+<br>
 
 ----
 ## Acknowlegdments
