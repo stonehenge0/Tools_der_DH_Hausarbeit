@@ -1,64 +1,18 @@
-# Wie ähnlich sind sich Sherlock Holmes und Enola Holmes?
+# How similar are Sherlock Enola Holmes?
 ![ ](https://github.com/stonehenge0/Tools_der_DH_Hausarbeit/blob/main/gif_rm_Sherlock.gif)
 
 
-This is a blueprint README.md file for you to use as a guideline on how to format your porject outline.
-
-Here are some more resources on how to format a markdown file for your project repository:
-- [GitHub Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [QuickRef Markdown Cheatsheet](https://quickref.me/markdown)
-- [DevHints Markdown Cheatsheet](https://devhints.io/markdown)
-
-One example of a previous project repository can be found [here](https://gitlab.gwdg.de/alrun.naake/caterpillar). Please note that some details of the repository and project structure have changed in the meantime, however, this might give you a rough idea on how to structure your work.
 ----
-## Description
+## Inhalt
 
-For your project, you should mention here
-
-- what your project is
-- why you chose this project and goal, and
-- how you plan to achieve it.
-
-In the section on how you aim to achive your goal(s), you may want to include sub-sections for each of the main features your project is comprised of.
-However, keep this part rather short, and preferably move details into the __functionalities__ section.
+Dieses Repository beinhaltet verschiedene Messungen mithilfe von dem Python Modul (spaCy)[https://spacy.io/], mit denen man Ähnlichkeit zwischen den Texten Büchern von Sherlock und Enola Holmes feststellen kann. 
 
 ----
-## Functionalities
+## Funktionalitäten
 
-Add your plans (with external libraries if you plan on using any) for any of these subsections, if applicable to your project.
-As mentioned in the **outline document**, at least 60% of these have to be implemented.
 
-### Data Sources and Retrieval
 
-Will your data be sourced
-- From an open dataset (eg. kaggle, data paper,...)
-- Collected from an API or a Webcrawler
-- From your own research
 
-Reference your data source(s) as well as any tools you will use to collect it, such as API libraries, conversion tools etc.
-
-### Data Storage and Handling
-
-Will you be using a database system (eg. SQL, MongoDB,...)?
-How will you load and process data, and what libraries do you plan to use for this (eg. pandas/polars, numpy,...)?
-
-### User Management
-
-Will your project have distinct users?
-If so, how do you store and check credentials?
-Are there different roles (eg. customer/admin) with privileges?
-
-### Interface
-
-What kind of interface are you planning (CLI/GUI)?
-What operating system will it run on, or will it be a web-based app?
-What libraries do you need for this?
-
-### Statistical Analysis
-
-What statistical analyses will you conduct on your data?
-Will specialized libraries be required for this, and if so, which?
-What quintessential point(s)/takeaways are you planning to substantiate?
 
 ### Visualizations
 
@@ -70,37 +24,49 @@ With what libraries will you implement this?
 ----
 ## Installation and Usage
 
-This should inform anyone who looks at your project repository on how they can install and run the project code on their own machine, e.g. by cloning this repository, installing dependencies and running some main script.
+See `requirements.txt` for a full list of requirements.
+The fastest way to install the requirements is using [pip](https://packaging.python.org/en/latest/tutorials/installing-packages/#use-pip-for-installing) and a [virtual environment](https://docs.python.org/3/tutorial/venv.html) (like [venv](https://docs.python.org/3/library/venv.html)).
+> Make sure to substitute <name_of_vev> with an actual name for your environment.
+
+```sh
+python3 -m venv <name_of_venv>
+source <name_of_venv>/bin/activate
+pip install -r requirements.txt
+```
+
 
 ----
-## Timeline
+## Modul-Details
 
-Give some outline as to what should be achieved at what time during project development.
-You could also create a visual guide, such as this
-![An example schedule](schedule.png)
+- Semester: Wintersemester 2023/24
+- Modulnummer:
+- Prüferin: Hanna Surjadi
 
-to make sure all relevant aspects of developing an application are accounted for with sufficient time, and in sensible order.
-This can also help you and the tutors to make sure the development does not go off the rails, and thus ensure a finished project at the deadline.
+---
+## License
+This project is covered through a MIT License.
 
-----
-## Group Details
+Copyright (c) 2024 Emma Victoria Stein
 
-Here, you should provide a group name you want to be referred to as, as well as the names (and optionally contact info) of all group members.
-Additionally, define a group leader, i.e. one person in your group that is the primary contact if tutors want to communicate with your group.
-Also mention here which tutor is assigned to your project.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Example:
-- Group name: 
-- Group code: 
-- Group repository: 
-- Tutor responsible:  
-- Group team leader: 
-- Group members:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Include also the (detailed) contribution of each group member to the development of the project.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-Example:
-**Member A**: Developed the data structure of the project. Helped _Member B_ on the web interface and user management. Refactoring on components X, Y, and Z. Responsible for the unit tests in P ant T.
+> See [LICENSE](LICENSE.txt).
 
 ----
 ## Acknowlegdments
