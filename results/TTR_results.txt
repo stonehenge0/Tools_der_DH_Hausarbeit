@@ -1,0 +1,4 @@
+average TTR for Sherlock: 0.4195997100621609
+
+
+average TTR for Enola: 0.46916326530612246
