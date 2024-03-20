@@ -1,3 +1,5 @@
+"""Analyse document similarity between Enola and Sherlock using spacy's inbuilt document similarity functioin.
+"""
 
 import os 
 
@@ -26,5 +28,5 @@ if __name__ == "__main__":
     e_doc = nlp(e)
     s_doc = nlp(s)
         
-    print("similarity score: " ,(e_doc.similarity(s_doc)))
+    print("similarity score: " ,(s_doc.similarity(s_doc))) # similarity score:  0.9951040569738279
     
