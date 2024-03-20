@@ -58,16 +58,18 @@ s_doc = nlp(s)
 s_tokenlist = [token.text.lower() for token in s_doc if not token.is_punct and not token.is_space]
 average_ttr_s = calculate_average_ttr(s, nlp, slice_size)
 
-print(f"Average Type Token Ratio for Sherlock: {average_ttr_s}")
+print(f"Average Type Token Ratio for Sherlock: {average_ttr_s}") # => 0.4195997100621609
+
 
 ## Uncomment these if you want to run the code for the ENOLA files. 
+
 # with open(e_filepath, 'r', encoding='utf-8') as file:
 #   e = file.read()
 # e_doc = nlp(e)
 # e_tokenlist = [token.text.lower() for token in e_doc if not token.is_punct and not token.is_space]
 # average_ttr_e = calculate_average_ttr(e, nlp, slice_size)
 
-# print(f"Average Type Token Ratio for Enola: {average_ttr_e}")
+# print(f"Average Type Token Ratio for Enola: {average_ttr_e}") # => 0.46916326530612246
 
 
 
