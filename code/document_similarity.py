@@ -28,5 +28,5 @@ if __name__ == "__main__":
     e_doc = nlp(e)
     s_doc = nlp(s)
         
-    print("similarity score: " ,(s_doc.similarity(s_doc))) # similarity score:  0.9951040569738279
+    print("similarity score: " ,(s_doc.similarity(e_doc))) # similarity score:  0.9951040569738279
     
